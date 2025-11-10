@@ -371,7 +371,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'center',
-    gap: 16,
   },
   courseCard: {
     backgroundColor: '#FFFFFF',
@@ -382,6 +381,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 10,
     elevation: 5,
+    marginHorizontal: 8,
     width: cardWidth,
   },
   imageContainer: {
