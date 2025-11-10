@@ -72,7 +72,9 @@ export default function CoursesScreen() {
         >
           <Text style={styles.jumpButtonText}>View 6-Week Courses</Text>
         </TouchableOpacity>
+
         <View style={styles.coursesGrid}>
+
           {/* First Aid Card */}
           <View style={styles.courseCard}>
             <View style={styles.imageContainer}>
@@ -89,15 +91,14 @@ export default function CoursesScreen() {
                 <Text style={styles.contentItem}>• Wounds and bleeding</Text>
                 <Text style={styles.contentItem}>• Burns and fractures</Text>
                 <Text style={styles.contentItem}>• Emergency scene management</Text>
-                <Text style={styles.contentItem}>• Cardio-Pulmonary Resuscitation (CPR)</Text>
-                <Text style={styles.contentItem}>• Respiratory distress e.g., choking, blocked airway</Text>
+                <Text style={styles.contentItem}>• CPR</Text>
+                <Text style={styles.contentItem}>• Choking / blocked airway</Text>
               </View>
               <View style={styles.courseFooter}>
                 <Text style={styles.coursePrice}>R1500</Text>
                 <TouchableOpacity
                   style={styles.addToCartButton}
                   onPress={() => handleAddToCart({ id: 'first-aid', name: 'First Aid', price: 1500 })}
-                  accessibilityLabel="Add First Aid to Cart"
                 >
                   <Text style={styles.addToCartButtonText}>Add to Cart</Text>
                 </TouchableOpacity>
@@ -116,20 +117,18 @@ export default function CoursesScreen() {
             </View>
             <View style={styles.cardContent}>
               <Text style={styles.courseTitle}>Sewing</Text>
-              <Text style={styles.coursePurpose}>Provide alterations and new garment tailoring services</Text>
+              <Text style={styles.coursePurpose}>Provide tailoring and alteration services</Text>
               <View style={styles.courseContent}>
-                <Text style={styles.contentItem}>• Types of stitches</Text>
-                <Text style={styles.contentItem}>• Threading a sewing machine</Text>
-                <Text style={styles.contentItem}>• Sewing buttons, zips, hems, and seams</Text>
+                <Text style={styles.contentItem}>• Stitches and threading</Text>
+                <Text style={styles.contentItem}>• Buttons, zips, hems</Text>
                 <Text style={styles.contentItem}>• Alterations</Text>
-                <Text style={styles.contentItem}>• Designing and sewing new garments</Text>
+                <Text style={styles.contentItem}>• Designing garments</Text>
               </View>
               <View style={styles.courseFooter}>
                 <Text style={styles.coursePrice}>R1500</Text>
                 <TouchableOpacity
                   style={styles.addToCartButton}
                   onPress={() => handleAddToCart({ id: 'sewing', name: 'Sewing', price: 1500 })}
-                  accessibilityLabel="Add Sewing to Cart"
                 >
                   <Text style={styles.addToCartButtonText}>Add to Cart</Text>
                 </TouchableOpacity>
@@ -148,20 +147,17 @@ export default function CoursesScreen() {
             </View>
             <View style={styles.cardContent}>
               <Text style={styles.courseTitle}>Landscaping</Text>
-              <Text style={styles.coursePurpose}>Provide landscaping services for new and established gardens</Text>
+              <Text style={styles.coursePurpose}>Garden layout & plant balance</Text>
               <View style={styles.courseContent}>
-                <Text style={styles.contentItem}>• Indigenous and exotic plants and trees</Text>
-                <Text style={styles.contentItem}>• Fixed structures (fountains, statues, benches, tables, built-in braai)</Text>
-                <Text style={styles.contentItem}>• Balancing of plants and trees in a garden</Text>
-                <Text style={styles.contentItem}>• Aesthetics of plant shapes and colours</Text>
-                <Text style={styles.contentItem}>• Garden layout</Text>
+                <Text style={styles.contentItem}>• Indigenous & exotic plants</Text>
+                <Text style={styles.contentItem}>• Aesthetic layout</Text>
+                <Text style={styles.contentItem}>• Garden planning</Text>
               </View>
               <View style={styles.courseFooter}>
                 <Text style={styles.coursePrice}>R1500</Text>
                 <TouchableOpacity
                   style={styles.addToCartButton}
                   onPress={() => handleAddToCart({ id: 'landscaping', name: 'Landscaping', price: 1500 })}
-                  accessibilityLabel="Add Landscaping to Cart"
                 >
                   <Text style={styles.addToCartButtonText}>Add to Cart</Text>
                 </TouchableOpacity>
@@ -180,33 +176,35 @@ export default function CoursesScreen() {
             </View>
             <View style={styles.cardContent}>
               <Text style={styles.courseTitle}>Life Skills</Text>
-              <Text style={styles.coursePurpose}>Provide skills to navigate basic life necessities</Text>
+              <Text style={styles.coursePurpose}>Essential everyday literacy and rights</Text>
               <View style={styles.courseContent}>
-                <Text style={styles.contentItem}>• Opening a bank account</Text>
-                <Text style={styles.contentItem}>• Basic labour law (know your rights)</Text>
-                <Text style={styles.contentItem}>• Basic reading and writing literacy</Text>
-                <Text style={styles.contentItem}>• Basic numeric literacy</Text>
+                <Text style={styles.contentItem}>• Bank accounts</Text>
+                <Text style={styles.contentItem}>• Labour law</Text>
+                <Text style={styles.contentItem}>• Reading & writing</Text>
+                <Text style={styles.contentItem}>• Basic maths</Text>
               </View>
               <View style={styles.courseFooter}>
                 <Text style={styles.coursePrice}>R1500</Text>
                 <TouchableOpacity
                   style={styles.addToCartButton}
                   onPress={() => handleAddToCart({ id: 'life-skills', name: 'Life Skills', price: 1500 })}
-                  accessibilityLabel="Add Life Skills to Cart"
                 >
                   <Text style={styles.addToCartButtonText}>Add to Cart</Text>
                 </TouchableOpacity>
               </View>
             </View>
           </View>
+
         </View>
       </View>
 
       {/* 6-Week Courses Section */}
       <View style={styles.section} ref={sixWeekSectionRef}>
         <Text style={styles.sectionTitle}>6-Week Courses</Text>
+
         <View style={styles.coursesGrid}>
-          {/* Child Minding Card */}
+
+          {/* Child Minding */}
           <View style={styles.courseCard}>
             <View style={styles.imageContainer}>
               <Image
@@ -217,19 +215,17 @@ export default function CoursesScreen() {
             </View>
             <View style={styles.cardContent}>
               <Text style={styles.courseTitle}>Child Minding</Text>
-              <Text style={styles.coursePurpose}>Provide basic child and baby care</Text>
+              <Text style={styles.coursePurpose}>Care for babies and toddlers</Text>
               <View style={styles.courseContent}>
-                <Text style={styles.contentItem}>• Birth to six-month-old baby needs</Text>
-                <Text style={styles.contentItem}>• Seven-month to one-year-old needs</Text>
-                <Text style={styles.contentItem}>• Toddler needs</Text>
-                <Text style={styles.contentItem}>• Educational toys</Text>
+                <Text style={styles.contentItem}>• Baby needs</Text>
+                <Text style={styles.contentItem}>• Toddler care</Text>
+                <Text style={styles.contentItem}>• Educational play</Text>
               </View>
               <View style={styles.courseFooter}>
                 <Text style={styles.coursePrice}>R750</Text>
                 <TouchableOpacity
                   style={styles.addToCartButton}
                   onPress={() => handleAddToCart({ id: 'child-minding', name: 'Child Minding', price: 750 })}
-                  accessibilityLabel="Add Child Minding to Cart"
                 >
                   <Text style={styles.addToCartButtonText}>Add to Cart</Text>
                 </TouchableOpacity>
@@ -237,7 +233,7 @@ export default function CoursesScreen() {
             </View>
           </View>
 
-          {/* Cooking Card */}
+          {/* Cooking */}
           <View style={styles.courseCard}>
             <View style={styles.imageContainer}>
               <Image
@@ -248,20 +244,17 @@ export default function CoursesScreen() {
             </View>
             <View style={styles.cardContent}>
               <Text style={styles.courseTitle}>Cooking</Text>
-              <Text style={styles.coursePurpose}>Prepare and cook nutritious family meals</Text>
+              <Text style={styles.coursePurpose}>Nutritious family meals</Text>
               <View style={styles.courseContent}>
-                <Text style={styles.contentItem}>• Nutritional requirements for a healthy body</Text>
-                <Text style={styles.contentItem}>• Types of protein, carbohydrates, and vegetables</Text>
-                <Text style={styles.contentItem}>• Planning meals</Text>
-                <Text style={styles.contentItem}>• Tasty and nutritious recipes</Text>
-                <Text style={styles.contentItem}>• Preparation and cooking of meals</Text>
+                <Text style={styles.contentItem}>• Meal planning</Text>
+                <Text style={styles.contentItem}>• Recipes</Text>
+                <Text style={styles.contentItem}>• Ingredients</Text>
               </View>
               <View style={styles.courseFooter}>
                 <Text style={styles.coursePrice}>R750</Text>
                 <TouchableOpacity
                   style={styles.addToCartButton}
                   onPress={() => handleAddToCart({ id: 'cooking', name: 'Cooking', price: 750 })}
-                  accessibilityLabel="Add Cooking to Cart"
                 >
                   <Text style={styles.addToCartButtonText}>Add to Cart</Text>
                 </TouchableOpacity>
@@ -269,7 +262,7 @@ export default function CoursesScreen() {
             </View>
           </View>
 
-          {/* Garden Maintenance Card */}
+          {/* Garden Maintenance */}
           <View style={styles.courseCard}>
             <View style={styles.imageContainer}>
               <Image
@@ -280,34 +273,29 @@ export default function CoursesScreen() {
             </View>
             <View style={styles.cardContent}>
               <Text style={styles.courseTitle}>Garden Maintenance</Text>
-              <Text style={styles.coursePurpose}>
-                Provide basic knowledge of watering, pruning, and planting in a domestic garden
-              </Text>
+              <Text style={styles.coursePurpose}>Watering, pruning & planting</Text>
               <View style={styles.courseContent}>
-                <Text style={styles.contentItem}>
-                  • Water restrictions and watering requirements of indigenous and exotic plants
-                </Text>
-                <Text style={styles.contentItem}>• Pruning and propagation of plants</Text>
-                <Text style={styles.contentItem}>• Planting techniques for different plant types</Text>
+                <Text style={styles.contentItem}>• Plant care</Text>
+                <Text style={styles.contentItem}>• Propagation</Text>
+                <Text style={styles.contentItem}>• Planting techniques</Text>
               </View>
               <View style={styles.courseFooter}>
                 <Text style={styles.coursePrice}>R750</Text>
                 <TouchableOpacity
                   style={styles.addToCartButton}
                   onPress={() => handleAddToCart({ id: 'garden-maintenance', name: 'Garden Maintenance', price: 750 })}
-                  accessibilityLabel="Add Garden Maintenance to Cart"
                 >
                   <Text style={styles.addToCartButtonText}>Add to Cart</Text>
                 </TouchableOpacity>
               </View>
             </View>
           </View>
+
         </View>
 
         <TouchableOpacity
           style={styles.jumpButton}
           onPress={scrollToSixMonthCourses}
-          accessibilityLabel="Back to 6-Month Courses"
         >
           <Text style={styles.jumpButtonText}>Back to 6-Month Courses</Text>
         </TouchableOpacity>
@@ -316,7 +304,7 @@ export default function CoursesScreen() {
       {/* Footer */}
       <View style={styles.footer}>
         <Text style={styles.footerText}>
-          &copy; 2022 Empowering the Nation. All rights reserved. | Igniting futures, one skill at a time!
+          © 2022 Empowering the Nation. All rights reserved.
         </Text>
       </View>
     </ScrollView>
@@ -324,7 +312,7 @@ export default function CoursesScreen() {
 }
 
 const { width } = Dimensions.get('window');
-const cardWidth = width > 768 ? (width - 64) / 3 : width > 500 ? (width - 48) / 2 : width - 32;
+const cardWidth = width > 900 ? (width - 80) / 3 : width > 600 ? (width - 48) / 2 : width - 32;
 
 const styles = StyleSheet.create({
   container: {
@@ -381,7 +369,8 @@ const styles = StyleSheet.create({
   coursesGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
+    gap: 16,
   },
   courseCard: {
     backgroundColor: '#FFFFFF',
@@ -402,7 +391,7 @@ const styles = StyleSheet.create({
   },
   courseImage: {
     width: '100%',
-    height: 180, 
+    height: 200,
     transform: [{ translateY: -0 }], // move image up
   },
   cardContent: {
@@ -431,21 +420,25 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
   courseFooter: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-  coursePrice: {
-    fontSize: 16,
-    fontWeight: '700',
-    color: '#006400',
-  },
-  addToCartButton: {
-    backgroundColor: '#006400',
-    paddingVertical: 8,
-    paddingHorizontal: 16,
-    borderRadius: 8,
-  },
+  width: '100%',
+  flexDirection: 'column',
+  alignItems: 'center',
+  marginTop: 8,
+},
+coursePrice: {
+  fontSize: 16,
+  fontWeight: '700',
+  color: '#006400',
+  marginBottom: 8,
+},
+addToCartButton: {
+  backgroundColor: '#006400',
+  paddingVertical: 10,
+  paddingHorizontal: 20,
+  borderRadius: 8,
+  width: '100%', // makes responsive for all phone sizes
+  alignItems: 'center',
+},
   addToCartButtonText: {
     fontSize: 14,
     fontWeight: '600',
