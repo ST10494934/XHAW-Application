@@ -143,7 +143,7 @@ export default function ContactScreen() {
               padding: 10,
             }}>
               <Text style={{ fontSize: 22, marginRight: 10, color: '#DAA520' }}>📥</Text>
-              <Text style={{ fontSize: 14, color: '#333' }}>
+              <Text style={{ fontSize: 14, color: '#333', flex: 1 }}>
                 <Text style={{ fontWeight: '700', color: '#006400' }}>Email:</Text>{' '}
                 <Text
                   style={{ color: '#006400', textDecorationLine: 'underline' }}
