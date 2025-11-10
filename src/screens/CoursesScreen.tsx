@@ -147,11 +147,11 @@ export default function CoursesScreen() {
             </View>
             <View style={styles.cardContent}>
               <Text style={styles.courseTitle}>Landscaping</Text>
-              <Text style={styles.coursePurpose}>Garden layout & plant balance</Text>
+              <Text style={styles.coursePurpose}>Provide landscaping services for new and established gardens</Text>
               <View style={styles.courseContent}>
                 <Text style={styles.contentItem}>• Indigenous & exotic plants</Text>
-                <Text style={styles.contentItem}>• Aesthetic layout</Text>
-                <Text style={styles.contentItem}>• Garden planning</Text>
+                <Text style={styles.contentItem}>• Fixed structures (fountains, statues, benches, tables, built-in braai)</Text>
+                <Text style={styles.contentItem}>• Garden planning including aesthetics of plant shapes and colours</Text>
               </View>
               <View style={styles.courseFooter}>
                 <Text style={styles.coursePrice}>R1500</Text>
@@ -178,10 +178,10 @@ export default function CoursesScreen() {
               <Text style={styles.courseTitle}>Life Skills</Text>
               <Text style={styles.coursePurpose}>Essential everyday literacy and rights</Text>
               <View style={styles.courseContent}>
-                <Text style={styles.contentItem}>• Bank accounts</Text>
-                <Text style={styles.contentItem}>• Labour law</Text>
-                <Text style={styles.contentItem}>• Reading & writing</Text>
-                <Text style={styles.contentItem}>• Basic maths</Text>
+                <Text style={styles.contentItem}>• Opening a bank account</Text>
+                <Text style={styles.contentItem}>• Basic labour law (know your rights)</Text>
+                <Text style={styles.contentItem}>• Basic reading and writing literacy</Text>
+                <Text style={styles.contentItem}>• Basic numeric literacy</Text>
               </View>
               <View style={styles.courseFooter}>
                 <Text style={styles.coursePrice}>R1500</Text>
@@ -244,11 +244,12 @@ export default function CoursesScreen() {
             </View>
             <View style={styles.cardContent}>
               <Text style={styles.courseTitle}>Cooking</Text>
-              <Text style={styles.coursePurpose}>Nutritious family meals</Text>
+              <Text style={styles.coursePurpose}>Prepare and cook nutritious family meals</Text>
               <View style={styles.courseContent}>
-                <Text style={styles.contentItem}>• Meal planning</Text>
-                <Text style={styles.contentItem}>• Recipes</Text>
-                <Text style={styles.contentItem}>• Ingredients</Text>
+                <Text style={styles.contentItem}>• Nutritional requirements for a healthy body</Text>
+                <Text style={styles.contentItem}>• Types of protein, carbohydrates, and vegetables</Text>
+                <Text style={styles.contentItem}>• Planning meals</Text>
+                <Text style={styles.contentItem}>• Tasty and nutritious recipes</Text>
               </View>
               <View style={styles.courseFooter}>
                 <Text style={styles.coursePrice}>R750</Text>
@@ -273,11 +274,11 @@ export default function CoursesScreen() {
             </View>
             <View style={styles.cardContent}>
               <Text style={styles.courseTitle}>Garden Maintenance</Text>
-              <Text style={styles.coursePurpose}>Watering, pruning & planting</Text>
+              <Text style={styles.coursePurpose}>Provide basic knowledge of watering, pruning, and planting in a domestic garden</Text>
               <View style={styles.courseContent}>
                 <Text style={styles.contentItem}>• Plant care</Text>
-                <Text style={styles.contentItem}>• Propagation</Text>
-                <Text style={styles.contentItem}>• Planting techniques</Text>
+                <Text style={styles.contentItem}>• Pruning and propagation of plants</Text>
+                <Text style={styles.contentItem}>• Planting techniques for different plant types</Text>
               </View>
               <View style={styles.courseFooter}>
                 <Text style={styles.coursePrice}>R750</Text>
