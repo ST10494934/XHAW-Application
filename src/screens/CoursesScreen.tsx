@@ -119,9 +119,9 @@ export default function CoursesScreen() {
               <Text style={styles.courseTitle}>Sewing</Text>
               <Text style={styles.coursePurpose}>Provide tailoring and alteration services</Text>
               <View style={styles.courseContent}>
-                <Text style={styles.contentItem}>• Stitches and threading</Text>
-                <Text style={styles.contentItem}>• Buttons, zips, hems</Text>
-                <Text style={styles.contentItem}>• Alterations</Text>
+                <Text style={styles.contentItem}>• Types of stitches</Text>
+                <Text style={styles.contentItem}>• Sewing buttons, zips, hems, and seams</Text>
+                <Text style={styles.contentItem}>• Threading a sewing machine</Text>
                 <Text style={styles.contentItem}>• Designing garments</Text>
               </View>
               <View style={styles.courseFooter}>
@@ -305,7 +305,7 @@ export default function CoursesScreen() {
       {/* Footer */}
       <View style={styles.footer}>
         <Text style={styles.footerText}>
-          © 2022 Empowering the Nation. All rights reserved.
+          &copy; 2022 Empowering the Nation. All rights reserved. | Igniting futures, one skill at a time!
         </Text>
       </View>
     </ScrollView>
